@@ -1,13 +1,13 @@
 class Vouch < Formula
   desc "Hardware-backed identity for developers"
   homepage "https://github.com/vouch-sh/vouch"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0 OR MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/vouch-sh/vouch/releases/download/v0.1.4/vouch-v0.1.4-aarch64-apple-darwin.tar.gz"
-      sha256 "8ab4bc5c780d2a8ae518b132675d79184523a75cc944e2f41b393277c4fb69c4"
+      url "https://github.com/vouch-sh/vouch/releases/download/v0.1.5/vouch-v0.1.5-aarch64-apple-darwin.tar.gz"
+      sha256 "6bf650543ad5d57465ddf1a8b9730bd521656320d71566d8d5e5cb6f1bfe56b6"
     end
   end
 
@@ -22,6 +22,13 @@ class Vouch < Formula
     keep_alive true
     log_path var/"log/vouch-agent.log"
     error_log_path var/"log/vouch-agent.log"
+  end
+
+  def caveats
+    <<~EOS
+      To restart the vouch-agent service after upgrading:
+        brew services restart vouch
+    EOS
   end
 
   test do
