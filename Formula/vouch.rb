@@ -1,13 +1,13 @@
 class Vouch < Formula
   desc "Hardware-backed identity for developers"
   homepage "https://github.com/vouch-sh/vouch"
-  version "2026.3.14"
+  version "2026.3.15"
   license "Apache-2.0 OR MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/vouch-sh/vouch/releases/download/v2026.3.14/vouch-v2026.3.14-aarch64-apple-darwin.tar.gz"
-      sha256 "75e47bcf3592d5b1bad997b875d64873263b137f459980fb96c4b30b4f720cc0"
+      url "https://github.com/vouch-sh/vouch/releases/download/v2026.3.15/vouch-v2026.3.15-aarch64-apple-darwin.tar.gz"
+      sha256 "fcfc333534239561c08c6debfe3f8e50ed149cdc0e508971b87ef7a4db4c2628"
     end
   end
 
